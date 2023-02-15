@@ -31,8 +31,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -72,20 +70,23 @@ body{
 
 button{
     height: 40px;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 0 20px 0 20px;
+    border: none;
+    border-radius: 60px;
     background-color: #1C2B32;
     color: #fff;
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
     transition: all 0.5s ease;
 }
 
 button:hover{
     background-color: #899CA0;
     color: #1C2B32;
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -104,7 +105,7 @@ h1{
 }
 
 h2{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -121,12 +122,22 @@ h5{
 }
 
 h6{
-    font-size: 48px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 p{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.section-heading{
+    margin-top: 70px;
+}
+
+a{
+    color: #899CA0;
 }
 
 
@@ -139,18 +150,19 @@ p{
 /*///////////// 3.1 Header /////////////*/
 
 .header{
-    height: 100vh;
+    height: 70vh;
+    padding-top: 50px;
     background-image: url("/assets/images/mountains.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .headerContent{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -161,7 +173,7 @@ header h1{
 /* Form wrapper styling */
 
 .search-wrapper {
-    width: 500px;
+    width: 450px;
     height: 55px;
     margin-top: 30px;
     border: 2px solid #1C2B32;
@@ -175,6 +187,7 @@ header h1{
 /* Form text input */
 
 .search-wrapper input {
+    width: 50%;
     border-style: none;
     background: transparent;
     color: #1C2B32;
@@ -200,8 +213,8 @@ header h1{
 /*///////////// 3.2 Testimonial /////////////*/
 
 .main{
-    padding: 30px 20vw 30px 20vw;
-    display: flex;
+    padding: 0 20vw 30px 20vw;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -209,10 +222,10 @@ header h1{
 
 .card{
     background-color: white;
-    padding: 50px;
+    padding: 45px 70px 45px 70px;
     border-radius: 5px;
-    margin-top: 40px;
-    box-shadow: 0px 17px 52px -19px rgba(0, 0, 0, 0.6);
+    margin-top: 60px;
+    box-shadow: 0px 8px 22px -10px rgba(112,112,112,1);
     display: flex;
     text-align: center;
 }
@@ -228,23 +241,92 @@ header h1{
     display: flex;
     align-items: center;
     margin-top: 30px;
+    font-style: italic;
 }
 
 .card-profile img{
-    height: 65px;
+    height: 44px;
     margin-right: 30px;
 }
 
-
-
-
-
 /*///////////// 3.3 Support /////////////*/
 
+.support-img{
+    width: 60vw;
+    background-color: white;
+    border-radius: 5px;
+    margin: 60px 0 20px 0;
+    box-shadow: 0px 8px 22px -10px rgba(112,112,112,1);
+    display: flex;
+    text-align: center;
+}
 
+.support-copy{
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.contact-button{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq{
+    width: 60vw;
+    margin-top: 60px;
+    text-align: center;
+}
 
+.faq-content{
+    margin-top: 60px;
+    text-align: left;
+}
+
+details {
+    margin-top: 15px;
+    padding: 0.5em 0.5em 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+summary {
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+summary:hover{
+    cursor: pointer;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.faq-details{
+    padding: 20px;
+    background-color: #899CA0;
+    border-radius: 5px;
+    color: white;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+.footer{
+    height: 60px;
+    margin-top: 30px;
+    background-color: #1C2B32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
