@@ -33,25 +33,31 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -63,12 +69,21 @@ table {
 
 /*(grijs #899CA0 en donkergroen #1C2B32)*/
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     color: #1C2B32;
 }
 
-button{
+.main {
+    max-width: 1000px;
+    padding: 0 20vw 30px 20vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
     height: 40px;
     padding: 0 20px 0 20px;
     border: none;
@@ -81,7 +96,7 @@ button{
     transition: all 0.5s ease;
 }
 
-button:hover{
+button:hover {
     background-color: #899CA0;
     color: #1C2B32;
     font-family: 'Poppins', sans-serif;
@@ -99,44 +114,44 @@ button:hover{
     2. Typography
 ////////////////////////*/
 
-h1{
+h1 {
     font-size: 90px;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: 24px;
     font-weight: 700;
 }
 
-h3{
+h3 {
+    font-size: 28px;
+}
+
+h4 {
     font-size: 48px;
 }
 
-h4{
+h5 {
     font-size: 48px;
 }
 
-h5{
-    font-size: 48px;
-}
-
-h6{
+h6 {
     font-size: 12px;
     font-weight: 700;
 }
 
-p{
+p {
     font-size: 12px;
     font-weight: 300;
     line-height: 20px;
 }
 
-.section-heading{
+.section-heading {
     margin-top: 70px;
 }
 
-a{
+a {
     color: #899CA0;
 }
 
@@ -146,10 +161,9 @@ a{
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
-.header{
+.header {
     height: 70vh;
     padding-top: 50px;
     background-image: url("/assets/images/mountains.jpg");
@@ -160,13 +174,13 @@ a{
     justify-content: center;
 }
 
-.headerContent{
+.headerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header h1{
+header h1 {
     margin-bottom: 30px;
 }
 
@@ -212,61 +226,53 @@ header h1{
 
 /*///////////// 3.2 Testimonial /////////////*/
 
-.main{
-    padding: 0 20vw 30px 20vw;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card{
+.card {
     background-color: white;
     padding: 45px 70px 45px 70px;
     border-radius: 5px;
     margin-top: 60px;
-    box-shadow: 0px 8px 22px -10px rgba(112,112,112,1);
+    box-shadow: 0px 8px 22px -10px rgba(112, 112, 112, 1);
     display: flex;
     text-align: center;
 }
 
-.blockquote{
+.blockquote {
     margin-right: 15px;
 }
-.card-content{
+
+.card-content {
     text-align: left;
 }
 
-.card-profile{
+.card-profile {
     display: flex;
     align-items: center;
     margin-top: 30px;
     font-style: italic;
 }
 
-.card-profile img{
+.card-profile img {
     height: 44px;
     margin-right: 30px;
 }
 
 /*///////////// 3.3 Support /////////////*/
 
-.support-img{
-    width: 60vw;
+.support-img {
+    width: 100%;
     background-color: white;
     border-radius: 5px;
     margin: 60px 0 20px 0;
-    box-shadow: 0px 8px 22px -10px rgba(112,112,112,1);
     display: flex;
     text-align: center;
 }
 
-.support-copy{
+.support-copy {
     text-align: left;
     margin-bottom: 40px;
 }
 
-.contact-button{
+.contact-button {
     height: 50px;
     display: flex;
     justify-content: flex-start;
@@ -275,13 +281,12 @@ header h1{
 
 /*///////////// 3.4 Faq /////////////*/
 
-.faq{
-    width: 60vw;
+.faq {
     margin-top: 60px;
     text-align: center;
 }
 
-.faq-content{
+.faq-content {
     margin-top: 60px;
     text-align: left;
 }
@@ -299,7 +304,7 @@ summary {
     padding: 0.5em;
 }
 
-summary:hover{
+summary:hover {
     cursor: pointer;
 }
 
@@ -312,7 +317,7 @@ details[open] summary {
     font-weight: 600;
 }
 
-.faq-details{
+.faq-details {
     padding: 20px;
     background-color: #899CA0;
     border-radius: 5px;
@@ -321,12 +326,43 @@ details[open] summary {
 
 /*///////////// 3.5 Footer /////////////*/
 
-.footer{
-    height: 60px;
+.footer {
     margin-top: 30px;
     background-color: #1C2B32;
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.footer-menu {
+    width: 60vw;
+    margin: 90px 0 90px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+li {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.line-div {
+    background-color: white;
+    height: 200px;
+    width: 1px;
+}
+
+.copyrights {
+    height: 30px;
+    background-color: #1C2B32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
 }
